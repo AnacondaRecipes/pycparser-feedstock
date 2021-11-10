@@ -21,13 +21,19 @@ requirements:
     - pip
     - python
     - setuptools
+    - wheel
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - pycparser
     - pycparser.ply
+  requires:
+    - pip
+    - python <3.10
+  commands:
+    - pip check
 
 about:
   home: https://github.com/eliben/pycparser
