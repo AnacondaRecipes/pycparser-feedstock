@@ -32,6 +32,7 @@ test:
     - python <3.10
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
 
 about:
   home: https://github.com/eliben/pycparser
