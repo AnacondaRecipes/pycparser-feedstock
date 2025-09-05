@@ -29,7 +29,7 @@ test:
     - pycparser.ply
   requires:
     - pip
-    - python <3.10
+    - python
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
