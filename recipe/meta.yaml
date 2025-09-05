@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py<36]
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - python >=3.6
+    - python
 
 test:
   imports:
