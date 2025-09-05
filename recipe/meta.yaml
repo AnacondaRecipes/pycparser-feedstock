@@ -26,6 +26,8 @@ requirements:
 test:
   source_files:
     - tests
+    # used by tests
+    - examples  # [linux]
   imports:
     - pycparser
     - pycparser.ply
