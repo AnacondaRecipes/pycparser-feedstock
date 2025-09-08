@@ -28,6 +28,8 @@ test:
     - tests
     # used by tests
     - examples  # [linux]
+    # contains fake libc includes which bypasses errors which occurs when including real system headers
+    - utils  # [linux]
   imports:
     - pycparser
     - pycparser.ply
