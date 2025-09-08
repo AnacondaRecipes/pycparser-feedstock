@@ -38,7 +38,7 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest -vv tests
+    - pytest --rootdir=. -vv tests
 
 about:
   home: https://github.com/eliben/pycparser
