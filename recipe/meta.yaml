@@ -28,7 +28,8 @@ test:
     - tests
     # used by tests
     - examples  # [linux]
-    # contains fake libc includes which bypasses errors which occurs when including real system headers
+    # folder contains fake libc includes used by tests, which bypasses errors that would
+    # occurs if the system's regular stdlib headers were to be included and parsed.
     - utils  # [linux]
   imports:
     - pycparser
