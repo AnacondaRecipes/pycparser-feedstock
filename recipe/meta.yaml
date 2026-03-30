@@ -33,7 +33,9 @@ test:
     - utils  # [linux]
   imports:
     - pycparser
-    - pycparser.ply
+    - pycparser.c_ast
+    - pycparser.c_lexer
+    - pycparser.c_parser
   requires:
     - pip
     - python
