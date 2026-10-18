@@ -18,7 +18,6 @@ requirements:
   host:
     - pip
     - python
-    - wheel
     - setuptools >=69
   run:
     - python
